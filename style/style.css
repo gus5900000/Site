@@ -1,0 +1,75 @@
+@font-face {
+    font-family: Sandlera;
+    src: url(Sandlera.otf);
+}
+
+@font-face {
+    font-family: code;
+    src: url(CODE\ Light.otf);
+}
+
+
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Sandlera, sans-serif;
+}
+
+
+
+h1 {
+    color: rgb(255, 255, 255);
+    font-size: 2.5rem;
+    text-shadow: 1px 1px 2px black;
+    text-align: center;
+}
+
+h3 {
+    color: rgb(255, 255, 255);
+    font-size: 2.5rem;
+    text-shadow: 1px 1px 2px black;
+    font-family: code, sans-serif;
+    text-align: center;
+
+}
+
+
+#header-top {
+    display: flex;
+    flex-direction: row;
+    justify-content: center; 
+    align-items: center;
+    background-color: gray;
+    color: white;
+    padding: 10px;
+    margin: 0px;
+    width: 100vw;
+    height: 20vh;
+}
+
+
+#header-logo {
+    width: 25vw;
+}
+
+#header-titre {
+    width: 25vw;
+}
+
+#header-login {
+    width: 25vw;
+    
+}
+
+#logo {
+    height: 17vh;
+}
+
+label, input {
+    display: block;
+}
+
