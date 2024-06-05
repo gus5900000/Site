@@ -134,11 +134,12 @@ label, input {
 
 nav {
     width: 15vw;
-    height: 70vh;
+    height: 100%;
     background-color: #222831;
     border-radius: 0 0 15px 0px;
     position: fixed;
     z-index: 5;
+    top: 28vh;
 }
 
 
@@ -163,6 +164,7 @@ nav .button:hover {
 }
 
 main {
+    position: relative;
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
@@ -171,6 +173,8 @@ main {
     padding-top: 2.5em;
     max-width: 75vw;
     min-width: 20vw;
+    top: 28vh;
+    left: 15vw;
 }
 
 article {
@@ -280,37 +284,42 @@ article p {
 }
 
 footer {
-    background-color: var(--color-bleucustom); /* Fond bleu foncé pour le footer */
-    color: #fff; /* Texte en blanc */
-    padding: 20px; /* Espace autour du contenu du footer */
-    font-family: RobotoCondensed, sans-serif; /* Utilisation de Roboto Condensed pour le texte */
+    position: relative;
+    top: 35vh;
+    left: 30vh;
+    width: 86%;
+    background-color: var(--color-bleucustom); 
+    color: #fff; 
+    padding: 20px;
+    font-family: RobotoCondensed, sans-serif;
 }
 
 footer h3 {
-    font-family: Sandlera, sans-serif; /* Utilisation de la police Sandlera pour les titres */
-    text-align: center; /* Centrage des titres */
-    margin-bottom: 10px; /* Espace après le titre */
-    font-size: 1.5rem; /* Taille de la police pour les titres */
-    color: var(--color-bleulitecustom); /* Couleur bleu clair pour les titres */
+    font-family: Sandlera, sans-serif; 
+    text-align: center; 
+    margin-bottom: 10px;
+    font-size: 1.5rem; 
+    color: var(--color-bleulitecustom); 
 }
 
 footer div > div {
-    margin: 10px; /* Marge autour des blocs d'adresse */
-    background-color: var(--color-graycustom); /* Fond gris foncé pour chaque bloc */
-    padding: 10px; /* Padding à l'intérieur des blocs */
-    border-radius: 5px; /* Bords arrondis pour les blocs */
-    box-shadow: 0 2px 5px rgba(0,0,0,0.2); /* Ombre pour un effet de profondeur */
+    margin: 10px; 
+    background-color: var(--color-graycustom); 
+    padding: 10px; 
+    border-radius: 5px; 
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2);
 }
 
 footer p {
-    font-family: RobotoLight, sans-serif; /* Police Roboto Light pour les paragraphes */
-    font-size: 0.9rem; /* Taille de la police réduite pour les paragraphes */
-    line-height: 1.5; /* Hauteur de ligne pour améliorer la lisibilité */
-    margin: 5px 0; /* Marge verticale pour les paragraphes */
+    font-family: RobotoLight, sans-serif;
+    font-size: 0.9rem; 
+    line-height: 1.5; 
+    margin: 5px 0; 
+    color: #fff;
 }
 
 footer p:first-of-type {
-    font-family: RobotoBold, sans-serif; /* Utilisation de Roboto Bold pour le nom du site */
-    color: #fff; /* Texte en blanc pour le nom du site */
-    font-size: 1.1rem; /* Taille de la police pour le nom du site */
+    font-family: RobotoBold, sans-serif; 
+    color: #fff; 
+    font-size: 1.1rem;
 }
