@@ -8,6 +8,20 @@
     src: url(CODE\ Light.otf);
 }
 
+@font-face {
+    font-family: RobotoBold;
+    src: url(./roboto/Roboto-BoldCondensed.ttf);
+}
+
+@font-face {
+    font-family: RobotoCondensed;
+    src: url(./roboto/Roboto-Condensed.ttf);
+}
+
+@font-face {
+    font-family: RobotoLight;
+    src: url(./roboto/Roboto-Light.ttf);
+}
 
 * {
     margin: 0px;
@@ -48,6 +62,11 @@ h3 {
     margin: 0px;
     width: 100vw;
     height: 20vh;
+}
+
+header {
+    position: fixed;
+    z-index: 10;
 }
 
 
@@ -118,6 +137,8 @@ nav {
     height: 70vh;
     background-color: #222831;
     border-radius: 0 0 15px 0px;
+    position: fixed;
+    z-index: 5;
 }
 
 
@@ -139,4 +160,157 @@ nav .button {
 
 nav .button:hover {
     background-color: #00ADB5;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    padding-left: 3.5em;
+    padding-top: 2.5em;
+    max-width: 75vw;
+    min-width: 20vw;
+}
+
+article {
+    font-family: code, sans-serif;
+    font-size: 1.2em;
+    background-color: var(--color-graycustom);
+    box-shadow: 5px 5px 10px 0px black;
+    padding: 1em;
+}
+
+article h2 {
+    font-family: Sandlera, sans-serif; 
+    color: #fff;
+    font-size: 30px;
+}
+
+article h4 {
+    font-family: RobotoBold, sans-serif; 
+    color: var(--color-bleulitecustom);
+    font-size: 25px;
+}
+
+article p {
+    font-family: RobotoLight, sans-serif; 
+    color: #fff;
+    font-size: 17px;
+}
+
+/* iframe {
+    width: 60%;
+    aspect-ratio: 16/9;
+    display: block;
+    margin: 20px auto;
+} */
+
+#sites {
+    padding: 30px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: start;
+    align-items: start;
+}
+
+.site {
+    margin: 15px;
+    width: 300px;
+    max-width: 75vw;
+    min-width: 20vw;
+    aspect-ratio: 1/1;
+    border-radius: 10%;
+    box-shadow: 2px 2px 5px 0px black;
+    background-repeat: no-repeat;
+    background-size: cover;
+    cursor: pointer;
+}   
+
+
+.nom-site {
+    margin: auto;
+    font-family: RobotoBold, sans-serif; 
+    font-size: 2rem;
+    margin-top: 75%;
+    font-weight: 900;
+    color: black;
+    display: flex;  
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(255, 255, 255, 0.486);   
+}
+
+#arm {
+    background-image: url(../assets/e2cArmMono.png);
+}
+
+#arm:hover {
+    background-image: url(../assets/e2cArm.png);
+}
+
+#lil {
+    background-image: url(../assets/e2cLilleMono.png);
+}
+
+#lil:hover {
+    background-image: url(../assets/e2cLille.png);
+}
+
+#rbx {
+    background-image: url(../assets/e2cRoubaixMono.png);
+
+}
+
+#rbx:hover {
+    background-image: url(../assets/e2cRoubaix.png);
+
+}
+
+#sto {
+    background-image: url(../assets/e2cStoMono.png);
+
+}
+
+#sto:hover {
+    background-image: url(../assets/e2cSto.png);
+
+}
+
+footer {
+    background-color: var(--color-bleucustom); /* Fond bleu foncé pour le footer */
+    color: #fff; /* Texte en blanc */
+    padding: 20px; /* Espace autour du contenu du footer */
+    font-family: RobotoCondensed, sans-serif; /* Utilisation de Roboto Condensed pour le texte */
+}
+
+footer h3 {
+    font-family: Sandlera, sans-serif; /* Utilisation de la police Sandlera pour les titres */
+    text-align: center; /* Centrage des titres */
+    margin-bottom: 10px; /* Espace après le titre */
+    font-size: 1.5rem; /* Taille de la police pour les titres */
+    color: var(--color-bleulitecustom); /* Couleur bleu clair pour les titres */
+}
+
+footer div > div {
+    margin: 10px; /* Marge autour des blocs d'adresse */
+    background-color: var(--color-graycustom); /* Fond gris foncé pour chaque bloc */
+    padding: 10px; /* Padding à l'intérieur des blocs */
+    border-radius: 5px; /* Bords arrondis pour les blocs */
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2); /* Ombre pour un effet de profondeur */
+}
+
+footer p {
+    font-family: RobotoLight, sans-serif; /* Police Roboto Light pour les paragraphes */
+    font-size: 0.9rem; /* Taille de la police réduite pour les paragraphes */
+    line-height: 1.5; /* Hauteur de ligne pour améliorer la lisibilité */
+    margin: 5px 0; /* Marge verticale pour les paragraphes */
+}
+
+footer p:first-of-type {
+    font-family: RobotoBold, sans-serif; /* Utilisation de Roboto Bold pour le nom du site */
+    color: #fff; /* Texte en blanc pour le nom du site */
+    font-size: 1.1rem; /* Taille de la police pour le nom du site */
 }
