@@ -1,52 +1,33 @@
+
 <!DOCTYPE html>
 <html lang="fr">
+
 <head>
-    <meta charset="UTF8">
-    <meta name="viewport" content="width=device-widht, initial-scale=1.0">
-    <link href="style/style.css" rel="stylesheet">
-    <link href="assets/logo.png" rel="icon">
-    <title>Silence on lit</title>
+    <?php
+    include_once("../_partiels/_head.php");
+    ?>
 </head>
 
 
 <body>
-    <header class="header">
-        <div id="header-top">
-            <div id="header-logo"> 
-                <img id="logo" src="assets/logo.png" alt="logo">
-            </div>
-            <div id="header-titre">
-                <h1>Silence on lit</h1>
-                <h3>Acceuil</h3>
-            </div>
-            <div id="header-login">
-                <form action="#" method="#">
-                    <label for="identifiant">Identifiant</label>
-                    <input type="text" id="identifiant" name="identifiant" placeholder="Mettez votre identifiant">
-                    <label for="password">Mot de passe</label>
-                    <input type="password" id="password" name="password" placeholder="Mettez votre mdp">
-                </form>
-            </div>
-        </div>
-        <div id="header-bottom">
+    <!--Headers-->
+    <?php
+    include_once("../_partiels/_header.php");
 
-
-        </div>
-    </header>
+    ?>
+    <!--Headers -->
 
     <div id="midle">
+        <?php
+        include_once("../_partiels/_nav.php");
+        ?>
         <!--Menu -->
-        <nav>
-            <a href="index.html" target="_self" class="button">Acceuil</a>
-            <a href="page/game.html" target="_self" class="button">Détente</a>
-            <a href="page/account.html" target="_self" class="button">Mon Compte</a>
-        </nav>
         <!-- Partie principale avec le texte de présentation et les sites de l'E2C -->
         <main>
             <article>
-                <h2>  "Silence On Lit" à l'École de la Deuxième Chance Grand Lille </h2>
+                <h2> "Silence On Lit" à l'École de la Deuxième Chance Grand Lille </h2>
 
-                <p>Dans le cadre de ses initiatives innovantes pour favoriser l'insertion et le développement personnel des jeunes, l'École de la Deuxième Chance Grand Lille a mis en place le programme "Silence On Lit". Ce dispositif, qui consiste à aménager des temps de lecture quotidiens, présente de nombreux avantages pour les jeunes participants. </p> 
+                <p>Dans le cadre de ses initiatives innovantes pour favoriser l'insertion et le développement personnel des jeunes, l'École de la Deuxième Chance Grand Lille a mis en place le programme "Silence On Lit". Ce dispositif, qui consiste à aménager des temps de lecture quotidiens, présente de nombreux avantages pour les jeunes participants. </p>
 
                 <H4>1. Développement des Compétences Linguistiques </H4>
 
@@ -76,8 +57,9 @@
 
                 <p>Ce texte met en lumière les nombreux bénéfices du programme "Silence On Lit" et son rôle crucial dans le parcours de réinsertion des jeunes au sein de l'École de la Deuxième Chance Grand Lille. </p>
 
-<!--                 <iframe width="560" height="315" src="https://www.youtube.com/embed/-OWXAVX_-vg?si=yg72OKxBbzPdzm6A" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
- -->            </article>
+                <!--                 <iframe width="560" height="315" src="https://www.youtube.com/embed/-OWXAVX_-vg?si=yg72OKxBbzPdzm6A" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+ -->
+            </article>
             <div id="sites">
 
                 <div class="site" id="arm">
@@ -87,7 +69,7 @@
                 <div class="site" id="lil">
                     <p class="nom-site">Lille</p>
                 </div>
-    
+
                 <div class="site" id="rbx">
                     <p class="nom-site">Roubaix</p>
                 </div>
@@ -105,37 +87,10 @@
         </aside>
     </div>
 
-    <footer>
-  
-        <div>
-            <h3>Les sites de l'E2C Grand Lille</h3>
-            <div>
-                <p>Site d'Armentières</p>
-                <p>8 rue Philippe de Girard</p>
-                <p>59280 Armentières</p>
-                <p>📞 : 03 28 52 90 50</p>
-            </div>
-            <div>
-                <p>Site de Lille</p>
-                <p>48 rue des canonniers</p>
-                <p>59000 Lille</p>
-                <p>📞 : 03 20 63 30 80</p>
-            </div>
-            <div>
-                <p>Site de Roubaix</p>
-                <p>45 boulevard du général Leclerc</p>
-                <p>59100 Roubaix</p>
-                <p>📞 : 03 28 07 59 80</p>
-            </div>
-            <div>
-                <p>Site de Saint-Omer</p>
-                <p>17 rue Allent</p>
-                <p>62500 Saint-Omer</p>
-                <p>📞 : 03 28 52 90 60</p>
-            </div>
-        </div>
-            
-    </footer>
+    <?php
+    include_once("../_partiels/_footer.php");
+    ?>
+
 
 </body>
 
