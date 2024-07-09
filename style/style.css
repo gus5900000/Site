@@ -1,0 +1,325 @@
+@font-face {
+    font-family: Sandlera;
+    src: url(Sandlera.otf);
+}
+
+@font-face {
+    font-family: code;
+    src: url(CODE\ Light.otf);
+}
+
+@font-face {
+    font-family: RobotoBold;
+    src: url(./roboto/Roboto-BoldCondensed.ttf);
+}
+
+@font-face {
+    font-family: RobotoCondensed;
+    src: url(./roboto/Roboto-Condensed.ttf);
+}
+
+@font-face {
+    font-family: RobotoLight;
+    src: url(./roboto/Roboto-Light.ttf);
+}
+
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    --color-bleucustom: #222831;
+    --color-graycustom: #393E46;
+    --color-bleulitecustom: #00ADB5;
+}
+
+body {
+    font-family: code, sans-serif;
+}
+
+
+
+h1 {
+    color: #fff;
+    font-size: 2.5rem;
+    text-shadow: 1px 1px 2px black;
+}
+
+h3 {
+    color: #fff;
+    font-size: 2.5rem;
+    text-shadow: 1px 1px 2px black;
+    font-family: code, sans-serif;
+}
+
+#header-top {
+    display: flex;
+    flex-direction: row;
+    justify-content: center; 
+    align-items: center;
+    background-color: var(--color-bleucustom);
+    color: #fff;
+    padding: 10px;
+    margin: 0px;
+    width: 100vw;
+    height: 20vh;
+}
+
+header {
+    position: fixed;
+    z-index: 10;
+}
+
+
+#header-logo {
+    width: 15vw;
+    margin-right: 5vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#header-titre {
+    width: 70vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#header-titre h1 {
+    font-family: Sandlera, sans-serif; 
+}
+
+#header-login {
+    width: 10vw;
+    border: #fff solid 3px;
+    background-color: var(--color-graycustom);
+    border-radius: 5px;
+    padding: 5px;
+    font-size: 20px;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+}
+
+#header-login label {
+    font-size: 75%;
+    margin: 5px;
+}
+
+#logo {
+    height: 17vh;
+    display: block;
+}
+
+label, input {
+    display: block;
+}
+
+#header-bottom {
+    width: 100vw;
+    height: 8vh;
+    background-image: url(../assets/bookshelves.jpeg);
+    background-position: 10px;
+    background-repeat: repeat-x;
+}
+
+#midle {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: start;
+}
+
+nav {
+    width: 15vw;
+    height: 100%;
+    background-color: #222831;
+    border-radius: 0 0 15px 0px;
+    position: fixed;
+    z-index: 5;
+    top: 28vh;
+}
+
+
+nav .button {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    border: #222831 solid 3px;
+    background-color: #393E46;
+    border-radius: 10px;
+    text-decoration: none;
+    padding: 5px;
+    margin: 20px;
+    transition: 300ms;
+    font-size: 25px;
+}
+
+nav .button:hover {
+    background-color: #00ADB5;
+}
+
+main {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    padding-left: 3.5em;
+    padding-top: 2.5em;
+    max-width: 75vw;
+    min-width: 20vw;
+    top: 28vh;
+    left: 15vw;
+}
+
+article {
+    font-family: code, sans-serif;
+    font-size: 1.2em;
+    background-color: var(--color-graycustom);
+    box-shadow: 5px 5px 10px 0px black;
+    padding: 1em;
+}
+
+article h2 {
+    font-family: Sandlera, sans-serif; 
+    color: #fff;
+    font-size: 30px;
+}
+
+article h4 {
+    font-family: RobotoBold, sans-serif; 
+    color: var(--color-bleulitecustom);
+    font-size: 25px;
+}
+
+article p {
+    font-family: RobotoLight, sans-serif; 
+    color: #fff;
+    font-size: 17px;
+}
+
+/* iframe {
+    width: 60%;
+    aspect-ratio: 16/9;
+    display: block;
+    margin: 20px auto;
+} */
+
+#sites {
+    padding: 30px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: start;
+    align-items: start;
+}
+
+.site {
+    margin: 15px;
+    width: 300px;
+    max-width: 75vw;
+    min-width: 20vw;
+    aspect-ratio: 1/1;
+    border-radius: 10%;
+    box-shadow: 2px 2px 5px 0px black;
+    background-repeat: no-repeat;
+    background-size: cover;
+    cursor: pointer;
+}   
+
+
+.nom-site {
+    margin: auto;
+    font-family: RobotoBold, sans-serif; 
+    font-size: 2rem;
+    margin-top: 75%;
+    font-weight: 900;
+    color: black;
+    display: flex;  
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(255, 255, 255, 0.486);   
+}
+
+#arm {
+    background-image: url(../assets/e2cArmMono.png);
+}
+
+#arm:hover {
+    background-image: url(../assets/e2cArm.png);
+}
+
+#lil {
+    background-image: url(../assets/e2cLilleMono.png);
+}
+
+#lil:hover {
+    background-image: url(../assets/e2cLille.png);
+}
+
+#rbx {
+    background-image: url(../assets/e2cRoubaixMono.png);
+
+}
+
+#rbx:hover {
+    background-image: url(../assets/e2cRoubaix.png);
+
+}
+
+#sto {
+    background-image: url(../assets/e2cStoMono.png);
+
+}
+
+#sto:hover {
+    background-image: url(../assets/e2cSto.png);
+
+}
+
+footer {
+    position: relative;
+    top: 35vh;
+    left: 30vh;
+    width: 86%;
+    background-color: var(--color-bleucustom); 
+    color: #fff; 
+    padding: 20px;
+    font-family: RobotoCondensed, sans-serif;
+}
+
+footer h3 {
+    font-family: Sandlera, sans-serif; 
+    text-align: center; 
+    margin-bottom: 10px;
+    font-size: 1.5rem; 
+    color: var(--color-bleulitecustom); 
+}
+
+footer div > div {
+    margin: 10px; 
+    background-color: var(--color-graycustom); 
+    padding: 10px; 
+    border-radius: 5px; 
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+}
+
+footer p {
+    font-family: RobotoLight, sans-serif;
+    font-size: 0.9rem; 
+    line-height: 1.5; 
+    margin: 5px 0; 
+    color: #fff;
+}
+
+footer p:first-of-type {
+    font-family: RobotoBold, sans-serif; 
+    color: #fff; 
+    font-size: 1.1rem;
+}
