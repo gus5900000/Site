@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="fr">
 
@@ -15,12 +14,12 @@
     ?>
 
     <div id="midle">
-        <?php
-        include_once("../_partiels/_nav.php");
-        ?>
-        
-        <p> <?= $_GET['nom'] ?> </p>
+        <main>
+            <?php
+            include_once("../_partiels/_nav.php");
+            ?>
 
+        </main>
     </div>
 
     <?php

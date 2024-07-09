@@ -8,11 +8,15 @@
             <h3><?= $title?></h3>
         </div>
         <div id="header-login">
-            <form action="#" method="#">
+            <form action="../Controller/login.php" method="post">
                 <label for="identifiant">Identifiant</label>
                 <input type="text" id="identifiant" name="identifiant" placeholder="Mettez votre identifiant">
+
                 <label for="password">Mot de passe</label>
                 <input type="password" id="password" name="password" placeholder="Mettez votre mdp">
+
+                <input type="submit" value="Se connecter">
+
             </form>
         </div>
     </div>
