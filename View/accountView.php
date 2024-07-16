@@ -15,9 +15,7 @@
 
     <div id="midle">
         <main>
-            <?php
-            include_once("../_partiels/_nav.php");
-            ?>
+
 
         </main>
     </div>

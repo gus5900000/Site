@@ -33,7 +33,7 @@
 }
 
 body {
-    font-family: code, sans-serif;
+    font-family: RobotoCondensed, sans-serif;
 }
 
 
@@ -48,7 +48,7 @@ h3 {
     color: #fff;
     font-size: 2.5rem;
     text-shadow: 1px 1px 2px black;
-    font-family: code, sans-serif;
+    font-family: RobotoCondensed, sans-serif;
 }
 
 #header-top {
@@ -92,20 +92,26 @@ header {
 }
 
 #header-login {
-    width: 10vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 15vw;
+    height: 18vh;
     border: #fff solid 3px;
     background-color: var(--color-graycustom);
-    border-radius: 5px;
+    border-radius: 5px; 
     padding: 5px;
-    font-size: 20px;
-    display: flex;
-    justify-content: end;
-    align-items: center;
+    font-size: 15px;
 }
 
 #header-login label {
     font-size: 75%;
     margin: 5px;
+}
+
+#header-login .button {
+    font-size: 15px;
 }
 
 #logo {
@@ -115,6 +121,17 @@ header {
 
 label, input {
     display: block;
+}
+
+
+.alertMessage {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 15px;
+    font-weight: 800;
+    color: red;
 }
 
 #header-bottom {
@@ -143,7 +160,7 @@ nav {
 }
 
 
-nav .button {
+.button {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -159,7 +176,8 @@ nav .button {
     font-size: 25px;
 }
 
-nav .button:hover {
+
+.button:hover {
     background-color: #00ADB5;
 }
 
@@ -178,7 +196,7 @@ main {
 }
 
 article {
-    font-family: code, sans-serif;
+    font-family: Roboto, sans-serif;
     font-size: 1.2em;
     background-color: var(--color-graycustom);
     box-shadow: 5px 5px 10px 0px black;
@@ -219,6 +237,7 @@ article p {
     align-items: start;
 }
 
+
 .site {
     margin: 15px;
     width: 300px;
@@ -237,10 +256,9 @@ article p {
     margin: auto;
     font-family: RobotoBold, sans-serif; 
     font-size: 2rem;
-    margin-top: 75%;
     font-weight: 900;
     color: black;
-    display: flex;  
+    display: flex;      
     flex-direction: row;
     justify-content: center;
     align-items: center;
@@ -286,7 +304,7 @@ article p {
 footer {
     position: relative;
     top: 35vh;
-    left: 30vh;
+    left: 32vh;
     width: 86%;
     background-color: var(--color-bleucustom); 
     color: #fff; 
@@ -295,7 +313,7 @@ footer {
 }
 
 footer h3 {
-    font-family: Sandlera, sans-serif; 
+    font-family: RobotoCondensed, sans-serif; 
     text-align: center; 
     margin-bottom: 10px;
     font-size: 1.5rem; 
@@ -322,4 +340,59 @@ footer p:first-of-type {
     font-family: RobotoBold, sans-serif; 
     color: #fff; 
     font-size: 1.1rem;
+}
+
+
+.books-table {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+    width: 80%;
+}
+
+.title-row, .book-row , .book-row > a {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: stretch;
+    text-decoration: none;
+    color: #000;
+    
+}       
+
+.title-row>*, .book-row>*  {
+    border: #000 solid 1px ;
+    padding: 2px;
+}
+
+.book-row > a {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: stretch;
+    width: 100%;
+    text-decoration: none;
+    text-align: center;
+}
+
+.title-row>* {
+    color: red;
+    font-weight: 800;
+    text-align: center;
+    background-color: var(--color-bleucustom);
+}
+
+.book-title {
+    width: 30%;
+}
+.book-author {
+    width: 30%;
+}
+.book-genre {
+    width: 25%;
+}
+.book-year {
+    width: 15%;
 }
